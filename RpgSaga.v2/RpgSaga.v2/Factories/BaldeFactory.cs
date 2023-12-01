@@ -8,6 +8,7 @@ public class BaldeFactory
         {
             Type = "Blade",
             Damage = damage,
+            DamageMultyplie = "bleeding"
         };
     }
 }

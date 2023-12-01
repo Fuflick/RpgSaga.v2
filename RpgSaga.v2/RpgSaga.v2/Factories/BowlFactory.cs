@@ -8,6 +8,7 @@ public class BowlFactory
         {
             Type = "Bowl",
             Damage = damage,
+            DamageMultyplie = "poison"
         };
     }
 }

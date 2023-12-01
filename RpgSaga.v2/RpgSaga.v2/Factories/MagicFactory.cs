@@ -4,13 +4,12 @@ public class MagicFactory
 {
     public Random Rnd { get; }
     
-    public IWeapon CreateWeapon(IWeapon weapon, string disable)
+    public IWeapon CreateWeapon(IWeapon weapon)
     {
         return new Magic()
         {
-            Disable = disable,
             Damage = weapon.Damage,
-            
+            DamageMultyplie = "nausea"
         };
     }
     

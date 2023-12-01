@@ -6,7 +6,7 @@ public class WarriorFactory
     public IHero CreateHero(string name, int health, string immunity)
     {
         var bladeFactory = new BaldeFactory();
-        var blade = bladeFactory.CreateWeapon(_rnd.Next(1, 10));
+        var blade = bladeFactory.CreateWeapon(_rnd.Next(3, 10));
         return new Warrior()
         {
             Name = name,

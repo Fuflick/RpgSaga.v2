@@ -6,4 +6,5 @@ public class Wizard : IHero
     public IWeapon Weapon { get; set; }
     public string Name { get; set; }
     public string? Immunity { get; set; }
+    
 }

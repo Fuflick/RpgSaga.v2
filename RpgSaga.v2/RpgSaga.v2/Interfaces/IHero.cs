@@ -8,15 +8,21 @@ public interface IHero
 
     string Name { get; set; }
     string? Immunity { get; set; }
-
-    bool HasImmunity(string immunityType)
-    {
-        return Immunity!.Contains(immunityType);
-    }
-
+    
     void TakeDamage(IHero hero2)
     {
-        Health -= Weapon.Damage;
+        if (Immunity == hero2.Weapon.DamageMultyplie)
+        {
+            Health -= hero2.Weapon.Damage;
+            Console.WriteLine($"{Name} has immunity for enemy's {hero2.Weapon.DamageMultyplie}");
+        }
+        else
+        {
+            Health -= hero2.Weapon.Modifie();
+            Console.WriteLine($"{Name} has no immunity for {hero2.Weapon.DamageMultyplie}");
+        }
+
+        Console.WriteLine("{0} health became {1}", Name, Health);
     }
-    
+
 }

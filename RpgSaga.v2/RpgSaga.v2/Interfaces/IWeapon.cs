@@ -2,8 +2,12 @@
 
 public interface IWeapon
 {
-    string Type { get; set; }
+    string Type { get; }
 
-    int Damage { get; set; }
+    int Damage { get; }
+    
+    public string DamageMultyplie { get; set; }
+
+    public int Modifie();
 
 }
