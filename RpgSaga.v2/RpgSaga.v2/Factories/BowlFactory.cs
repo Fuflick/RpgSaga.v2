@@ -1,6 +1,6 @@
 ﻿namespace RpgSaga.v2;
 
-public class BowlFactory : IWeaponFactory
+public class BowlFactory
 {
     public IWeapon CreateWeapon(int damage)
     {

@@ -1,6 +1,6 @@
 ﻿namespace RpgSaga.v2;
 
-public class MagicFactory : IWeaponFactory
+public class MagicFactory
 {
     public Random Rnd { get; }
     
